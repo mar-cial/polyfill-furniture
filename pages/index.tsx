@@ -5,7 +5,6 @@ import FurnitureRibbon from '@components/FurnitureRibbon'
 import Footer from '@components/Footer'
 
 const Homepage: NextPage = () => {
-  
   return (
     <div className='text-white bg-black'>
       <Banner />
