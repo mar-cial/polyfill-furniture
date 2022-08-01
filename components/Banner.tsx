@@ -7,13 +7,14 @@ const Banner = () => {
     const ribbon = document.querySelector('#furniture-ribbon');
     ribbon?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
+  
   return (
-    <div className="relative h-screen">
+    <div className="relative min-h-screen">
       <video
         autoPlay
         loop
         muted
-        className="absolute z-0 object-cover w-auto min-h-screen max-w-screen"
+        className="absolute z-0 object-cover w-full h-full min-h-screen max-w-screen"
       >
         <source src="/videos/bgvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
