@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>PolyFurniture</title>
+        <title>Polyfill Furniture</title>
         <link rel="shortcut icon" href="/ethereum.png" type="image/x-icon" />
       </Head>
       <Component {...pageProps} />
