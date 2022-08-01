@@ -38,24 +38,25 @@ const Homepage: NextPage = () => {
       setIsConnected(false);
     }
   };
+  
   return (
     <div className="text-white bg-black">
       <AnimatePresence>
-        {hasMetamask ? (
-          isConnected ? (
-            <motion.div animate={{ height: 0, transition: { delay: 1 } }}>
-              <button>Connected!</button>
-            </motion.div>
-          ) : isConnected ? (
-            ''
-          ) : (
-            <motion.div>
-              <button onClick={connect}>Connect to MetaMask</button>
-            </motion.div>
-          )
+        {hasMetamask ? isConnected ? (
+          <motion.div
+            initial={{ backgroundColor: "green", height: 20 }}
+            animate={{ height: 0, transition: {delay: 1} }}
+            className={'flex justify-center'}
+          >
+            Connected!
+          </motion.div>
         ) : (
-          'Please install MetaMask.'
-        )}
+          <motion.div className='flex justify-center'>
+            <motion.button onClick={connect}>
+            Click to connect to metamask
+          </motion.button>
+          </motion.div>
+        ) : 'Please install MetaMask.'}
       </AnimatePresence>
       <Banner />
       <FurnitureRibbon />
