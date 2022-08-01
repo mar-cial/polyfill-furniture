@@ -35,7 +35,7 @@ const Footer = () => {
     <div className="text-sm bg-zinc-900 min-h-[40vh] p-4 md:p-12 grid md:grid-cols-2 gap-6">
       <div className="grid grid-cols-3">
         <div className="flex flex-col items-center lg:items-start">
-          <h3 className='text-lg text-zinc-300'>Made with -</h3>
+          <h3 className='text-lg text-orange-100'>Made with</h3>
           <ul className="pl-4 list-disc">
             {tools.map((t) => (
               <motion.li key={t.id} whileHover={{ color: 'rgb(161 161 170)' }}>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col">
-          <h3 className='text-lg text-zinc-300'>Assets credit -</h3>
+          <h3 className='text-lg text-orange-100'>Assets credit</h3>
           <h4>Images</h4>
           <motion.a href="https://twitter.com/reisingerandres?lang=en" whileHover={{color: 'rgb(161 161 170)'}}>
             Reisinger Andres
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col">
-          <h3 className='text-lg text-zinc-300'>Dev team -</h3>
+          <h3 className='text-lg text-orange-100'>Dev team</h3>
           <ul>
             <motion.li whileHover={{ color: 'rgb(161 161 170)' }}>
               <a
