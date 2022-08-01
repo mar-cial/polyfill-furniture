@@ -43,7 +43,7 @@ const FurniturePage: NextPage = ({
       <PageHeader />
 
       <section className='flex flex-col items-center gap-12'>
-        <div className="w-full p-12 lg:w-5/6">
+        <div className="w-full lg:p-12 lg:w-5/6">
           <Image
             src={item.image}
             width={1000}
@@ -55,7 +55,7 @@ const FurniturePage: NextPage = ({
         <h2 className='text-4xl font-bold font-display'>{item.name}</h2>
 
         <div className='text-sm text-justify md:w-1/3'>
-          <p className='italic font-text text-slate-500'>{`"${item.description}"`}</p>
+          <p className='px-8 italic font-text text-slate-500'>{`"${item.description}"`}</p>
         </div>
 
         <div className='flex flex-col items-center'>
