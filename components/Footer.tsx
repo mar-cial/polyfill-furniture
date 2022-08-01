@@ -32,8 +32,8 @@ const Footer = () => {
   ];
 
   return (
-    <div className="text-sm bg-zinc-900 min-h-[40vh] p-12 grid md:grid-cols-2 gap-6">
-      <div className="grid md:grid-cols-3">
+    <div className="text-sm bg-zinc-900 min-h-[40vh] p-4 md:p-12 grid md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-3">
         <div className="flex flex-col items-center lg:items-start">
           <h3 className='text-lg text-zinc-300'>Made with -</h3>
           <ul className="pl-4 list-disc">
