@@ -1,10 +1,8 @@
 import Link from 'next/link';
 
-interface PageHeader {}
-
 const PageHeader = () => {
   return (
-    <header className="relative z-50 grid grid-cols-3 py-4 text-center ">
+    <header className="relative z-50 grid w-full grid-cols-3 px-2 py-4 text-center md:px-4">
       <div></div>
       <div>
         <Link href={'/'} passHref>
@@ -13,8 +11,8 @@ const PageHeader = () => {
           </a>
         </Link>
       </div>
-      <div className='flex justify-end pr-12 '>
-      <button className='font-display'>Connect to MetaMask</button> 
+      <div className="flex justify-end">
+        <button className="font-display">Connect to MetaMask</button>
       </div>
     </header>
   );
